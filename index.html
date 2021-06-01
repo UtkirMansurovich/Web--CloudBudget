@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    
+    <title>WEB CLOUDBUDGET</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div id="redHeader">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light mt-4">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#"><img src="Photo/CloudBudget.png" alt="Photo"></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav m-auto">
+                              <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#">OVERVIEW</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">FEATURES</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">CONTACT</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Sign up</a>
+                              </li>
+                            </ul>
+                            <form action="#">
+                                <label for="languages"></label>
+                                <select name="languages" id="languages">
+                                    <option class="en"  onclick="addOne()" value="en">EN</option>
+                                    <option class="ru"  onclick="addTwo()" value="ru">RU</option>
+                                    <option class="uzb" onclick="addThree()"  value="uzb">UZ</option>
+                                </select>
+                            <button class="login">login</button>    
+                            </form>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+             </div>
+             <div class="container">
+                <div class="row">
+                    <div id="OutSiteCloudBudget">
+                        <div id="CloudBudget">
+                            <h1 class="h1Cloud">CloudBudget</h1>
+                            <p class="pCloud">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up to €4.99</p>
+                            <button class="singUp">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- section-1 -->
+    <section id="sectionOne">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                        <div class="easyOurLearn">
+                          <h1 class="easy">Easy to Use Cloud Budget Management Software</h1>
+                          <p class="our">Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</p>
+                          <a class="learn" href="#">Learn More</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="videoButton"><img class="playButton" src="Photo/Play Button.png" alt="button"><iframe class="video" style="border-radius: 15px; display: none;" width="500" height="350" src="https://www.youtube.com/embed/BgjhbJwMdMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- section-2 -->
+    <section id="sectionTwo">
+      <div style="min-height: 100px;" class="container d-flex justify-content-center align-items-center">
+        <h1 class="features">Features</h1>
+      </div>
+        <div style="min-height: 485px;" class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="moneyArm">
+                <div class="insideImage">
+                  <h4 class="supportH4">Supports All Currencies and Cards</h4>
+                  <p class="supportP">We support all popular currencies and is fully customizable to add</p>
+                  <a class="supportA" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="phoneArm">
+                <div class="insideImage">
+                  <h4 class="supportH4">Manage your expenses on the go</h4>
+                  <p class="supportP">You can access your account from anywhere in the world on any device</p>
+                  <a class="supportA" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="hall">
+                <div class="insideImage">
+                  <h4 class="supportH4">Cloud Budget Management Software</h4>
+                  <p class="supportP">Our software is made so you can access and manage your budget</p>
+                  <a class="supportA" href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- section-3 -->
+    <section id="sectionThree">
+      <div class="container">
+        <h1 class="technologyH1">Technology</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h1 class="h101">01</h1>
+            <img class="cloudImage" src="Photo/cloud.png" alt="photo">
+            <h5 class="cloudH5">Cloud Storage</h5>
+            <p class="accessP">Access your account from anywhere in the world on any device</p>
+          </div>
+          <div class="col-lg-3">
+            <h1 class="h101">02</h1>
+            <img class="secureImage" src="Photo/Secure.png" alt="photo">
+            <h5 class="cloudH5">Secure</h5>
+            <p class="accessP">All your information is stored on secure cloud servers</p>
+          </div>
+          <div class="col-lg-3">
+            <h1 class="h101">03</h1>
+            <img class="pdfImage" src="Photo/PDF Download.png" alt="photo">
+            <h5 class="cloudH5">PDF Download</h5>
+            <p class="accessP">Download any of your reports in PDF format</p>
+          </div>
+          <div class="col-lg-3">
+            <h1 class="h101">04</h1>
+            <img class="csvImage" src="Photo/CSV Download.png" alt="photo">
+            <h5 class="cloudH5">CSV Download</h5>
+            <p class="accessP">All your information is stored on secure cloud servers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-4 -->
+    <section id="sectionFour">
+      <div class="container">
+        <div style="min-height: 400px;" class="row d-flex align-items-center justify-content-between">
+          <div style="min-height: 300px; max-width: 450px;" class="col-lg-6 d-flex flex-column justify-content-evenly">
+            <h2 class="stayH2">Stay focused on saving money</h2>
+            <p class="itP">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
+            <div>
+              <img class="me-4" src="Photo/playstore.png" alt="Photo">
+              <img class="me-4" src="Photo/appstore.png" alt="Photo">
+              <img class="me-4" src="Photo/windows.png" alt="Photo">
+            </div>
+           </div>
+          <div class="col-lg-6">
+            <img style="max-width: 100%;" src="Photo/SliderVideo.png" alt="Photo">        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-5 -->
+    <section id="sectionFife">
+      <div class="container">
+        <div class="row">
+          <div style="height: 150px;" class="col-lg-6 d-flex flex-column justify-content-between">
+            <h3 class="contactH3">Contact</h3>
+            <p class="questionP">Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="nameSelect" action="https:google.com">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 mt-2">
+                  <input class="name" type="text" placeholder="First Name">
+                </div>
+                <div class="col-md-6 col-sm-12 mt-2">
+                  <input class="name" type="text" placeholder="Last Name">
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                  <input class="number" type="text" placeholder="Phone Number">  
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <select class="number" name="selectServis" id="servis" placeholder="Select Servis">
+                    <option value="servisOne">Servis One</option>
+                    <option value="servisTwo">Servis Two</option>
+                    <option value="servisThree">Servis Three</option>
+                    <option value="servisFour">Servis Four</option>
+                    <option value="servisFife">Servis Fife</option>
+                    <option value="servisSex">Servis Sex</option>
+                  </select>
+                </div>
+                <div >
+                  <button class="submitNow">submit now</button>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="min-height: 250px;" class="container d-flex flex-column justify-content-between">
+        <div style="min-height: 200px;" class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h5 class="addressH5 my-4">Address</h5>
+            <p class="pipangP">Pipang Ltd, Griva Digeni,
+              81-83 Jacovides Tower, 1st Floor
+              1090 Picosia USA</p>
+              
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h5 class="addressH5 my-4">Services</h5>
+            <ul style="padding-left: 0;">
+              <li><a class="overview" href="#"></a>Overview</li>
+              <li><a class="overview" href="#"></a>Features</li>
+              <li><a class="overview" href="#"></a>Technology</li>
+              <li><a class="overview" href="#"></a>Terms & Conditions</li>
+              <li><a class="overview" href="#"></a>Privecy</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h5 class="addressH5 my-4">Get in Touch</h5>
+            <p style="margin-bottom: 0;"><a class="info" href="#">info@cloudbudget.com</a></p>
+            <p><a class="info" href="#">+1 844-721-7120</a></p>
+            <a  class="me-2" href="#"><img src="Photo/facebook.png" alt="Photo"></a>
+            <a  class="me-2" href="#"><img src="Photo/linkedin.png" alt="Photo"></a>
+            <a class="me-2"  href="#"><img src="Photo/twitter.png" alt="Photo"></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h5 class="addressH5 my-4">We Support</h5>
+            <a href="#"><img src="Photo/visaCard.png" alt="Photo"></a>
+          </div>
+        </div>
+        <p class="copyRight my-4">Copyright 2018 CloudBudget</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script>
+      let playButton = document.querySelector('.playButton');
+      let video = document.querySelector('.video');
+      playButton.addEventListener('click', ()=>{
+        video.style.display = 'block';
+        playButton.style.display = 'none';
+      })
+    </script>
+</body>
+</html>
